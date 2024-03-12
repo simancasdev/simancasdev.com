@@ -1,9 +1,9 @@
-import {CSSProperties} from "react";
 import {fontSizeObj} from "./helper";
 import {Children} from "@/src/interfaces";
 import {TypographyVariant} from "./types";
+import {CSSProperties, ReactNode} from "react";
 
-export interface TypographyProps extends Children<any>, CSSProperties {
+export interface TypographyProps extends Children<ReactNode>, CSSProperties {
   variant?: TypographyVariant;
 }
 

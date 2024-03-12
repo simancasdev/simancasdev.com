@@ -1,8 +1,8 @@
 import {Container} from "./styled";
-import {CSSProperties} from "react";
 import {Children} from "@/src/interfaces";
+import {CSSProperties, ReactNode} from "react";
 
-interface ColumnProps extends Children<any>, CSSProperties {}
+interface ColumnProps extends Children<ReactNode>, CSSProperties {}
 
 export const Column: React.FC<ColumnProps> = (props) => {
   const {children, ...style} = props;
