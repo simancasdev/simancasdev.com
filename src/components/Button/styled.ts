@@ -8,4 +8,9 @@ export const ButtonStyled = styled.button`
   border-radius: 5px;
   background-color: unset;
   background-color: #533fcc;
+  transition: all ease 0.3s;
+
+  &:active {
+    transform: scale(0.97);
+  }
 `;

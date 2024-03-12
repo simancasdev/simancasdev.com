@@ -6,15 +6,15 @@ export const Container = styled.div`
 `;
 
 export const Field = styled.div`
-  color: #fff;
   display: flex;
   cursor: pointer;
   font-size: 1rem;
   padding: 0.8rem;
   font-weight: 400;
   border-radius: 5px;
-  border: 2px solid #fff;
+  color: ${theme["white"]};
   justify-content: space-between;
+  border: 2px solid ${theme["white"]};
 `;
 
 export const DropdownStyled = styled.div`

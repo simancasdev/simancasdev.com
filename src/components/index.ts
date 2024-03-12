@@ -6,6 +6,7 @@ export * from "./Column";
 export * from "./Dropdown";
 export * from "./Input";
 export * from "./Mail";
+export * from "./Menu";
 export * from "./Nav";
 export * from "./Overlap";
 export * from "./Row";

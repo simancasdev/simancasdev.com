@@ -1,3 +1,4 @@
+import {theme} from "@/src/styles";
 import {Fragment, useState} from "react";
 import {ChevronDown, ChevronUp} from "react-feather";
 import {Backdrop, Column, Row, Typography} from "..";
@@ -33,7 +34,7 @@ export const Dropdown: React.FC<DropdownProps> = ({
             {value["icon"]}
             <Typography>{value["label"]}</Typography>
           </Row>
-          <ChevronIcon color="#fff" />
+          <ChevronIcon color={theme["white"]} />
         </Field>
         {displayDropdown && (
           <Fragment>

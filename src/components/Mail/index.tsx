@@ -1,6 +1,7 @@
 import {OPTIONS} from "./helper";
 import {Container} from "./styled";
 import {Send} from "react-feather";
+import {theme} from "@/src/styles";
 import {Column, Input, Dropdown, Typography, Button, Overlap} from "..";
 
 interface MailProps {}
@@ -30,7 +31,7 @@ export const Mail: React.FC<MailProps> = () => {
           <Button
             label="Send"
             onClick={() => {}}
-            icon={<Send color="#fff" />}
+            icon={<Send color={theme["white"]} />}
           />
         </Column>
       </Container>
