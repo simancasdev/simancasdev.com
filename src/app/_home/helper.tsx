@@ -1,3 +1,4 @@
+import {theme} from "../../styles/theme";
 import {CardProps, Row} from "@/src/components";
 import {
   Book,
@@ -12,12 +13,12 @@ import {
 } from "react-feather";
 
 const iconProps: IconProps = {
-  color: "#fff",
   size: 40,
+  color: theme["white"],
 };
 
 const footerIconProps: IconProps = {
-  color: "#fff",
+  color: theme["white"],
 };
 
 export const HOME_SERVICES: CardProps[] = [
@@ -62,8 +63,8 @@ type Benefit = {
 };
 
 const benefitIconProps: IconProps = {
-  color: "#fff",
   size: 30,
+  color: theme["white"],
 };
 
 export const benefits: Benefit[] = [

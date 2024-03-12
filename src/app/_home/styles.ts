@@ -2,7 +2,7 @@
 import styled from "styled-components";
 
 export const Layout = styled.main`
-  padding: 1rem;
+  padding: 2rem 1rem;
   height: 100vh;
   display: grid;
   max-width: 1300px;
