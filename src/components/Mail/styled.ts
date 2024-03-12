@@ -6,8 +6,7 @@ export const Container = styled.div`
   bottom: 2rem;
   width: 457px;
   position: fixed;
-  padding: 2rem 1.5rem;
   border-radius: 5px;
-  border: 1px solid #fff;
+  padding: 2rem 1.5rem;
   background-color: ${theme["primary"]};
 `;

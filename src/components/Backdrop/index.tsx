@@ -1,7 +1,7 @@
 import {Container} from "./styled";
 
 interface BackdropProps {
-  onClick: () => void;
+  onClick?: () => void;
   backgroundColor?: string;
 }
 

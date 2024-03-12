@@ -1,33 +1,39 @@
 import {OPTIONS} from "./helper";
 import {Container} from "./styled";
 import {Send} from "react-feather";
-import {Column, Input, Dropdown, Typography, Button} from "..";
+import {Column, Input, Dropdown, Typography, Button, Overlap} from "..";
 
 interface MailProps {}
 
 export const Mail: React.FC<MailProps> = () => {
   return (
-    <Container>
-      <Column gap={20}>
-        <Column>
-          <Typography variant="title">New Message</Typography>
-          <Typography fontWeight="300">
-            Hey, Simancasdev. I want to talk about
-          </Typography>
-        </Column>
-        <Column gap={15}>
-          <Input autoFocus placeholder="My new project" />
-          <Dropdown
-            options={OPTIONS}
-            onSelect={(option) => {
-              console.log(option);
-            }}
+    <Overlap onClick={() => alert("Close!")}>
+      <Container>
+        <Column gap={20}>
+          <Column>
+            <Typography variant="title">New Message</Typography>
+            <Typography fontWeight="300">
+              Hey, Simancasdev. I want to talk about
+            </Typography>
+          </Column>
+          <Column gap={15}>
+            <Input autoFocus placeholder="My new project" />
+            <Dropdown
+              options={OPTIONS}
+              onSelect={(option) => {
+                console.log(option);
+              }}
+            />
+            <Input placeholder="Do you want to add more description about it?" />
+            <Input label="Last but not least" placeholder="my@email.com" />
+          </Column>
+          <Button
+            label="Send"
+            onClick={() => {}}
+            icon={<Send color="#fff" />}
           />
-          <Input placeholder="Do you want to add more description about it?" />
-          <Input label="Last but not least" placeholder="my@email.com" />
         </Column>
-        <Button icon={<Send color="#fff" />} label="Send" onClick={() => {}} />
-      </Column>
-    </Container>
+      </Container>
+    </Overlap>
   );
 };

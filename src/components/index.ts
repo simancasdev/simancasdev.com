@@ -7,6 +7,7 @@ export * from "./Dropdown";
 export * from "./Input";
 export * from "./Mail";
 export * from "./Nav";
+export * from "./Overlap";
 export * from "./Row";
 export * from "./StyledRegistry";
 export * from "./Typography";
