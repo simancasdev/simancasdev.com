@@ -1,6 +1,11 @@
 "use client";
+export * from "./Backdrop";
+export * from "./Button";
 export * from "./Card";
 export * from "./Column";
+export * from "./Dropdown";
+export * from "./Input";
+export * from "./Mail";
 export * from "./Nav";
 export * from "./Row";
 export * from "./StyledRegistry";

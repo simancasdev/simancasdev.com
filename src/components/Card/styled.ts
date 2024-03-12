@@ -1,3 +1,4 @@
+import {theme} from "@/src/styles";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -8,7 +9,7 @@ export const Container = styled.div`
   max-width: 223px;
   border-radius: 5px;
   flex-direction: column;
-  background-color: rgba(46, 48, 57, 0.63);
+  background-color: ${theme["secondary"]};
   transition: all ease 0.3s;
   &:hover {
     transform: translateY(-5px);

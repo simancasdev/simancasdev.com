@@ -3,7 +3,7 @@ import {fontSizeObj} from "./helper";
 import {Children} from "@/src/interfaces";
 import {TypographyVariant} from "./types";
 
-interface TypographyProps extends Children<any>, CSSProperties {
+export interface TypographyProps extends Children<any>, CSSProperties {
   variant?: TypographyVariant;
 }
 

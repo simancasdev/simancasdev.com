@@ -2,7 +2,7 @@ import {Container} from "./styled";
 import {CSSProperties} from "react";
 import {Children} from "@/src/interfaces";
 
-interface RowProps extends Children, CSSProperties {}
+interface RowProps extends Children<any>, CSSProperties {}
 
 export const Row: React.FC<RowProps> = (props) => {
   const {children, ...style} = props;
