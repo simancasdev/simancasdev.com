@@ -1,9 +1,11 @@
 "use client";
+export * from "./Avatar";
 export * from "./Backdrop";
 export * from "./Button";
 export * from "./Card";
 export * from "./Column";
 export * from "./Dropdown";
+export * from "./Feedback";
 export * from "./Input";
 export * from "./Mail";
 export * from "./Menu";
