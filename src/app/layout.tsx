@@ -2,7 +2,7 @@ import "../styles/globals.css";
 import type {Metadata} from "next";
 import {Poppins} from "next/font/google";
 import {Body, Html, Layout, Main} from "./_home/styles";
-import {Mail, Nav, StyledRegistry} from "@/src/components";
+import {Mail, Menu, Nav, StyledRegistry} from "@/src/components";
 
 const poppins = Poppins({
   weight: ["200", "300", "400", "500", "600"],
@@ -29,13 +29,13 @@ export default function RootLayout({
       <Body className={poppins.className}>
         <StyledRegistry>
           <Layout>
-            <div />
+            <Menu />
             <Main>
               <Nav />
               {children}
             </Main>
             {/* 🌎 global components */}
-            <Mail />
+            {/* <Mail /> */}
           </Layout>
         </StyledRegistry>
       </Body>
