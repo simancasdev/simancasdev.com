@@ -21,39 +21,28 @@ const footerIconProps: IconProps = {
   color: theme["white"],
 };
 
+const Footer = (): JSX.Element => (
+  <Row justifyContent="center" children={<ChevronUp {...footerIconProps} />} />
+);
+
 export const HOME_SERVICES: CardProps[] = [
   {
+    footer: <Footer />,
     title: "Web Development",
     icon: <Monitor {...iconProps} />,
     description: "Let’s create an awesome User Interface with React",
-    footer: (
-      <Row
-        justifyContent="center"
-        children={<ChevronUp {...footerIconProps} />}
-      />
-    ),
   },
   {
+    footer: <Footer />,
     title: "Mobile Development",
     icon: <Smartphone {...iconProps} />,
     description: "Let’s create your dream mobile app with React Native",
-    footer: (
-      <Row
-        justifyContent="center"
-        children={<ChevronUp {...footerIconProps} />}
-      />
-    ),
   },
   {
+    footer: <Footer />,
     title: "Backend Development",
     icon: <Server {...iconProps} />,
     description: "Let’s create a good API services for your app’s with Node",
-    footer: (
-      <Row
-        justifyContent="center"
-        children={<ChevronUp {...footerIconProps} />}
-      />
-    ),
   },
 ];
 
