@@ -7,6 +7,6 @@ export const hrefs: Href[] = [
   {label: "Home", link: "/"},
   {label: "Pricing", link: "/pricing"},
   {label: "Feedbacks", link: "/feedbacks"},
-  {label: "NPM Packaged", link: "/npm-packages"},
+  {label: "NPM Packages", link: "/npm-packages"},
   {label: "About", link: "/about"},
 ];
