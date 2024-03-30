@@ -1,5 +1,5 @@
 import {Fragment} from "react";
-import {HOME_SERVICES, benefits} from "./_home/helper";
+import {HOME_SERVICES, BENEFITS} from "./_home/helper";
 import {Card, Column, Row, Typography} from "../components";
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
             What do you should expect for me?
           </Typography>
           <Column gap={25}>
-            {benefits.map(({icon, label}, key) => (
+            {BENEFITS.map(({icon, label}, key) => (
               <Row key={key} gap={20}>
                 {icon}
                 <Typography>{label}</Typography>

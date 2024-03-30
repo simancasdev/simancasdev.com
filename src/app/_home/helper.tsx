@@ -56,7 +56,7 @@ const benefitIconProps: IconProps = {
   color: theme["white"],
 };
 
-export const benefits: Benefit[] = [
+export const BENEFITS: Benefit[] = [
   {
     icon: <Code {...benefitIconProps} />,
     label:
