@@ -6,8 +6,8 @@ import {Feedback as FeedbackModel} from "@/src/interfaces";
 const mock: FeedbackModel[] = [
   {
     user: {
-      firstName: "Luis",
-      lastName: "Sanchez",
+      first_name: "Luis",
+      last_name: "Sanchez",
       role: "Senior Backend Developer",
       avatar:
         "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -17,8 +17,8 @@ const mock: FeedbackModel[] = [
   },
   {
     user: {
-      firstName: "Pedro",
-      lastName: "Martinez",
+      first_name: "Pedro",
+      last_name: "Martinez",
       role: "Senior DevOps",
       avatar:
         "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",

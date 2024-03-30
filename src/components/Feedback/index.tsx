@@ -8,7 +8,7 @@ interface FeedbackProps {
 
 export const Feedback: React.FC<FeedbackProps> = ({feedback}) => {
   const {user, feedback: message} = feedback;
-  const {role, firstName, lastName, avatar} = user;
+  const {role, first_name, last_name, avatar} = user;
   return (
     <Row gap={15} alignItems="flex-start">
       <Column>
@@ -17,7 +17,7 @@ export const Feedback: React.FC<FeedbackProps> = ({feedback}) => {
       <Column gap={10}>
         <Column>
           <Typography fontWeight="bold" fontSize={18}>
-            {firstName} {lastName}
+            {first_name} {last_name}
           </Typography>
           <Typography fontWeight="200">{role}</Typography>
         </Column>
