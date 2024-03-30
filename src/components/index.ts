@@ -10,6 +10,7 @@ export * from "./Input";
 export * from "./Mail";
 export * from "./Menu";
 export * from "./Nav";
+export * from "./NPMPackage";
 export * from "./Overlap";
 export * from "./Row";
 export * from "./StyledRegistry";
