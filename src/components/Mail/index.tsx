@@ -1,14 +1,17 @@
+import {Fragment} from "react";
 import {OPTIONS} from "./helper";
 import {Container} from "./styled";
 import {Send} from "react-feather";
 import {theme} from "@/src/styles";
+import {useMail} from "@/src/context";
 import {Column, Input, Dropdown, Typography, Button, Overlap} from "..";
 
 interface MailProps {}
 
 export const Mail: React.FC<MailProps> = () => {
-  return (
-    <Overlap onClick={() => alert("Close!")}>
+  const {isOpen, toggle} = useMail();
+  return isOpen ? (
+    <Overlap onClick={toggle}>
       <Container>
         <Column gap={20}>
           <Column>
@@ -36,5 +39,7 @@ export const Mail: React.FC<MailProps> = () => {
         </Column>
       </Container>
     </Overlap>
+  ) : (
+    <Fragment />
   );
 };

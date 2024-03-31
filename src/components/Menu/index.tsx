@@ -1,11 +1,13 @@
 import {Mail} from "react-feather";
 import {theme} from "@/src/styles";
+import {useMail} from "@/src/context";
 import {Button, Column, Typography} from "..";
 import {Container, ReactImage} from "./styled";
 
 interface MenuProps {}
 
 export const Menu: React.FC<MenuProps> = () => {
+  const {toggle} = useMail();
   return (
     <Container>
       <ReactImage
@@ -23,9 +25,9 @@ export const Menu: React.FC<MenuProps> = () => {
         </Column>
         <Column gap={10}>
           <Button
+            onClick={toggle}
             label="Talk with me"
             icon={<Mail color={theme["white"]} />}
-            onClick={() => alert("Open Mail component!")}
             style={{
               maxWidth: "155px",
               backgroundColor: theme["secondary"],
