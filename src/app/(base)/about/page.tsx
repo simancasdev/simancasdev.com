@@ -16,7 +16,7 @@ export default function About() {
         </Column>
       </Column>
       <Column>
-        <Typography>
+        <Typography fontSize={18} fontWeight={300} lineHeight={2}>
           Software Developer. I have been working mainly in front-end
           development for web and mobile applications. I like to always study
           and expand my knowledge to improve my practices always looking for
