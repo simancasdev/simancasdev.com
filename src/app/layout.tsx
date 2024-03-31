@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import type {Metadata} from "next";
+import {Provider} from "../context";
 import {Poppins} from "next/font/google";
 import {Body, Html, Layout, Main} from "./_home/styles";
 import {Mail, Menu, Nav, StyledRegistry} from "@/src/components";
@@ -27,17 +28,19 @@ export default function RootLayout({
   return (
     <Html lang="en">
       <Body className={poppins.className}>
-        <StyledRegistry>
-          <Layout>
-            <Menu />
-            <Main>
-              <Nav />
-              {children}
-            </Main>
-            {/* 🌎 global components */}
-            {/* <Mail /> */}
-          </Layout>
-        </StyledRegistry>
+        <Provider>
+          <StyledRegistry>
+            <Layout>
+              <Menu />
+              <Main>
+                <Nav />
+                {children}
+              </Main>
+              {/* 🌎 global components */}
+              <Mail />
+            </Layout>
+          </StyledRegistry>
+        </Provider>
       </Body>
     </Html>
   );
